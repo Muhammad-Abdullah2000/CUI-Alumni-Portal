@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 0 0% 7%;
+    --card: 210 20% 98%;
+    --card-foreground: 0 0% 7%;
+    --popover: 210 20% 98%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 215 66% 37%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 216 58% 75%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 210 20% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 260 52% 48%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 7%;
+    --border: 210 20% 20%;
+    --input: 210 20% 20%;
+    --ring: 260 52% 40%;
+    --radius: 0rem;
+  }
+
+  .dark {
+    --background: 210 20% 2%;
+    --foreground: 0 0% 93%;
+    --card: 210 20% 2%;
+    --card-foreground: 0 0% 93%;
+    --popover: 210 20% 2%;
+    --popover-foreground: 0 0% 93%;
+    --primary: 215 66% 63%;
+    --primary-foreground: 210 20% 2%;
+    --secondary: 216 58% 25%;
+    --secondary-foreground: 0 0% 93%;
+    --muted: 210 20% 80%;
+    --muted-foreground: 0 0% 93%;
+    --accent: 260 52% 52%;
+    --accent-foreground: 0 0% 93%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 10%;
+    --border: 210 20% 60%;
+    --input: 210 20% 80%;
+    --ring: 260 52% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+h1 {
+  font-size: 1.382rem; /* 22.08px */
+}
+
+h2 {
+  font-size: 1.295rem; /* 20.8px */
+}
+
+h3 {
+  font-size: 1.214rem; /* 19.36px */
+}
+
+h4 {
+  font-size: 1.138rem; /* 18.24px */
+}
+
+h5 {
+  font-size: 1.067rem; /* 17.12px */
+}
+
+small {
+  font-size: 0.937rem; /* 15.04px */
+}
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.489rem; /* 39.84px */
+  }
+
+  h2 {
+    font-size: 2.074rem; /* 33.12px */
+  }
+
+  h3 {
+    font-size: 1.728rem; /* 27.68px */
+  }
+
+  h4 {
+    font-size: 1.44rem; /* 23.04px */
+  }
+
+  h5 {
+    font-size: 1.2rem; /* 19.2px */
+  }
+
+  small {
+    font-size: 0.833rem; /* 13.28px */
+  }
+}
